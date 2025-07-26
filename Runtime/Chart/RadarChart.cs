@@ -3,8 +3,8 @@ using UnityEngine;
 namespace XCharts.Runtime
 {
     /// <summary>
-    /// Radar chart is mainly used to show multi-variable data, such as the analysis of a football player's varied attributes. It relies radar component.
-    /// || 雷达图主要用于显示多变量的数据，例如足球运动员的各项属性分析。依赖雷达组件。
+    /// レーダーチャートは、サッカー選手の様々な属性の分析など、多変量データを表示するために主に使用されます。レーダーコンポーネントに依存しています。
+    /// || レーダーチャートは、サッカー選手の様々な属性の分析など、多変量データを表示するために主に使用されます。レーダーコンポーネントに依存しています。
     /// </summary>
     [AddComponentMenu("XCharts/RadarChart", 16)]
     [ExecuteInEditMode]
@@ -22,8 +22,8 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default circle radar chart.
-        /// || 默认圆形雷达图。
+        /// デフォルトの円形レーダーチャート.
+        /// || デフォルトの円形レーダーチャート.
         /// </summary>
         public void DefaultCircleRadarChart()
         {

@@ -1,12 +1,11 @@
-
 using System;
 using UnityEngine;
 
 namespace XCharts.Runtime
 {
     /// <summary>
-    /// the animation info.
-    /// ||动画配置参数。
+    /// アニメーションの設定情報。
+    /// アニメーションの設定パラメータ。
     /// </summary>
     [Since("v3.8.0")]
     [System.Serializable]
@@ -20,55 +19,49 @@ namespace XCharts.Runtime
         public AnimationInfoContext context = new AnimationInfoContext();
 
         /// <summary>
-        /// whether enable animation.
-        /// ||是否开启动画效果。
+        /// アニメーション効果を有効にするかどうか。
+        /// アニメーション効果を有効にするかどうか。
         /// </summary>
         public bool enable { get { return m_Enable; } set { m_Enable = value; } }
         /// <summary>
-        /// whether enable reverse animation.
-        /// ||是否开启反向动画效果。
+        /// 逆方向アニメーションを有効にするかどうか。
+        /// 逆方向アニメーションを有効にするかどうか。
         /// </summary>
         public bool reverse { get { return m_Reverse; } set { m_Reverse = value; } }
         /// <summary>
-        /// the delay time before animation start.
-        /// ||动画开始前的延迟时间。
+        /// アニメーション開始前の遅延時間。
+        /// アニメーション開始前の遅延時間。
         /// </summary>
         public float delay { get { return m_Delay; } set { m_Delay = value; } }
         /// <summary>
-        /// the duration of animation. Default is used to calculate the speed of animation. It can also be specified by speed.
-        /// ||动画的时长。默认用于计算动画的速度。也可以通过speed指定速度。
+        /// アニメーションの時間。
+        /// アニメーションの時間。
         /// </summary>
         public float duration { get { return m_Duration; } set { m_Duration = value; } }
         /// <summary>
-        /// the speed of animation. When speed is specified, duration will be invalid. Default is 0, which means no speed specified.
-        /// ||动画的速度。当指定speed时，duration将失效。默认为0，表示不指定速度。
+        /// アニメーションの速度。speedを指定すると、durationは無効になります。デフォルトは0で、速度は指定されません。
         /// </summary>
         public float speed { get { return m_Speed; } set { m_Speed = value; } }
         /// <summary>
-        /// the callback function of animation start.
-        /// ||动画开始的回调。
+        /// アニメーション開始時のコールバック関数。
         /// </summary>
         public Action OnAnimationStart { get; set; }
         /// <summary>
-        /// the callback function of animation end.
-        /// ||动画结束的回调。
+        /// アニメーション終了時のコールバック関数。
         /// </summary>
         public Action OnAnimationEnd { get; set; }
 
         /// <summary>
-        /// the delegate function of animation delay.
-        /// ||动画延迟的委托函数。
+        /// アニメーション遅延のデリゲート関数。
         /// </summary>
         public AnimationDelayFunction delayFunction { get; set; }
         /// <summary>
-        /// the delegate function of animation duration.
-        /// ||动画时长的委托函数。
+        /// アニメーション時間のデリゲート関数。
         /// </summary>
         public AnimationDurationFunction durationFunction { get; set; }
 
         /// <summary>
-        /// Reset animation.
-        /// ||重置动画。
+        /// アニメーションをリセットします。
         /// </summary>
         public void Reset()
         {
@@ -90,10 +83,9 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// Start animation.
-        /// ||开始动画。
+        /// アニメーションを開始します。
         /// </summary>
-        /// <param name="reset">是否重置上一次的参数</param>
+        /// <param name="reset">前回のパラメータをリセットするかどうか</param>
         public void Start(bool reset = true)
         {
             if (!enable) return;
@@ -123,8 +115,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// Pause animation.
-        /// ||暂停动画。
+        /// アニメーションを一時停止します。
         /// </summary>
         public void Pause()
         {
@@ -134,8 +125,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// Resume animation.
-        /// ||恢复动画。
+        /// アニメーションを再開します。
         /// </summary>
         public void Resume()
         {
@@ -145,8 +135,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// End animation.
-        /// ||结束动画。
+        /// アニメーションを終了します。
         /// </summary>
         public void End()
         {
@@ -164,12 +153,11 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// Initialize animation.
-        /// ||初始化动画。
+        /// アニメーションを初期化します。
         /// </summary>
-        /// <param name="curr">当前进度</param>
-        /// <param name="dest">目标进度</param>
-        /// <param name="totalPointIndex">目标索引</param>
+        /// <param name="curr">現在の進捗</param>
+        /// <param name="dest">目標進捗</param>
+        /// <param name="totalPointIndex">目標インデックス</param>
         /// <returns></returns>
         public bool Init(float curr, float dest, int totalPointIndex)
         {
@@ -191,8 +179,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// Whether animation is finish.
-        /// ||动画是否结束。
+        /// アニメーションが終了したかどうか。
         /// </summary>
         public bool IsFinish()
         {
@@ -205,8 +192,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// Whether animation is in delay.
-        /// ||动画是否在延迟中。
+        /// アニメーションが遅延中かどうか。
         /// </summary>
         public bool IsInDelay()
         {
@@ -217,8 +203,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// Whether animation is in index delay.
-        /// ||动画是否在索引延迟中。
+        /// アニメーションがインデックス遅延中かどうか。
         /// </summary>
         /// <param name="dataIndex"></param>
         /// <returns></returns>
@@ -231,8 +216,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// Get animation delay.
-        /// ||获取动画延迟。
+        /// アニメーション遅延を取得します。
         /// </summary>
         /// <param name="dataIndex"></param>
         /// <returns></returns>
@@ -396,8 +380,7 @@ namespace XCharts.Runtime
     }
 
     /// <summary>
-    /// Fade in animation.
-    /// ||淡入动画。
+    /// フェードインアニメーション。
     /// </summary>
     [Since("v3.8.0")]
     [System.Serializable]
@@ -406,8 +389,7 @@ namespace XCharts.Runtime
     }
 
     /// <summary>
-    /// Fade out animation.
-    /// ||淡出动画。
+    /// フェードアウトアニメーション。
     /// </summary>
     [Since("v3.8.0")]
     [System.Serializable]
@@ -416,8 +398,7 @@ namespace XCharts.Runtime
     }
 
     /// <summary>
-    /// Data change animation.
-    /// ||数据变更动画。
+    /// データ変更アニメーション。
     /// </summary>
     [Since("v3.8.0")]
     [System.Serializable]
@@ -426,8 +407,7 @@ namespace XCharts.Runtime
     }
 
     /// <summary>
-    /// Data addition animation.
-    /// ||数据新增动画。
+    /// データ追加アニメーション。
     /// </summary>
     [Since("v3.8.0")]
     [System.Serializable]
@@ -436,8 +416,7 @@ namespace XCharts.Runtime
     }
 
     /// <summary>
-    /// Data hiding animation.
-    /// ||数据隐藏动画。
+    /// データ非表示アニメーション。
     /// </summary>
     [Since("v3.8.0")]
     [System.Serializable]
@@ -446,8 +425,7 @@ namespace XCharts.Runtime
     }
 
     /// <summary>
-    /// Interactive animation of charts.
-    /// ||交互动画。
+    /// チャートのインタラクションアニメーション。
     /// </summary>
     [Since("v3.8.0")]
     [System.Serializable]
@@ -458,18 +436,15 @@ namespace XCharts.Runtime
         [SerializeField][Since("v3.8.0")] private MLValue m_Offset = new MLValue(MLValue.Type.Absolute, 5f);
 
         /// <summary>
-        /// the mlvalue of width.
-        /// ||宽度的多样式数值。
+        /// 幅のML値。
         /// </summary>
         public MLValue width { get { return m_Width; } set { m_Width = value; } }
         /// <summary>
-        /// the mlvalue of radius.
-        /// ||半径的多样式数值。
+        /// 半径のML値。
         /// </summary>
         public MLValue radius { get { return m_Radius; } set { m_Radius = value; } }
         /// <summary>
-        /// the mlvalue of offset. Such as the offset of the pie chart when the sector is selected.
-        /// ||交互的多样式数值。如饼图的扇形选中时的偏移。
+        /// オフセットのML値。例：円グラフのセクター選択時のオフセット。
         /// </summary>
         public MLValue offset { get { return m_Offset; } set { m_Offset = value; } }
 
@@ -495,8 +470,7 @@ namespace XCharts.Runtime
     }
 
     /// <summary>
-    /// Data exchange animation. Generally used for animation of data sorting.
-    /// ||数据交换动画。一般用于图表数据排序时顺序变化的动画。
+    /// データ交換アニメーション。主にデータソート時の順序変更アニメーションで使用。
     /// </summary>
     [Since("v3.15.0")]
     [System.Serializable]

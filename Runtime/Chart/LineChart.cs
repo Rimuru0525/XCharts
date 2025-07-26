@@ -3,10 +3,10 @@ using UnityEngine;
 namespace XCharts.Runtime
 {
     /// <summary>
-    /// Line chart relates all the data points symbol by broken lines, which is used to show the trend of data changing. 
-    /// It could be used in both rectangular coordinate andpolar coordinate.
-    /// ||折线图是用折线将各个数据点标志连接起来的图表，用于展现数据的变化趋势。可用于直角坐标系和极坐标系上。
-    /// 设置 areaStyle 后可以绘制面积图。
+    /// 折れ線グラフは、データポイントを折れ線で結んだチャートで、データの変化傾向を表示するために使用されます。
+    /// 直交座標系と極座標系の両方で使用できます。
+    /// ||折れ線グラフは、データポイントを折れ線で結んだチャートで、データの変化傾向を表示します。
+    /// 直交座標系と極座標系の両方で使用でき、areaStyleを設定するとエリアチャートとしても描画できます。
     /// </summary>
     [AddComponentMenu("XCharts/LineChart", 13)]
     [ExecuteInEditMode]
@@ -30,8 +30,8 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default area line chart.
-        /// || 默认面积折线图。
+        /// デフォルトのエリア折れ線グラフ.
+        /// || デフォルトのエリア折れ線グラフ.
         /// </summary>
         public void DefaultAreaLineChart()
         {
@@ -42,8 +42,8 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default smooth line chart.
-        /// || 默认平滑折线图。
+        /// デフォルトのスムーズ折れ線グラフ.
+        /// || デフォルトのスムーズ折れ線グラフ.
         /// </summary>
         public void DefaultSmoothLineChart()
         {
@@ -54,8 +54,8 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default smooth area line chart.
-        /// || 默认平滑面积折线图。
+        /// デフォルトのスムーズエリア折れ線グラフ.
+        /// || デフォルトのスムーズエリア折れ線グラフ.
         /// </summary>
         public void DefaultSmoothAreaLineChart()
         {
@@ -67,8 +67,8 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default stack line chart.
-        /// || 默认堆叠折线图。
+        /// デフォルトの積み上げ折れ線グラフ.
+        /// || デフォルトの積み上げ折れ線グラフ.
         /// </summary>
         public void DefaultStackLineChart()
         {
@@ -81,8 +81,8 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default stack area line chart.
-        /// || 默认堆叠面积折线图。
+        /// デフォルトの積み上げエリア折れ線グラフ.
+        /// || デフォルトの積み上げエリア折れ線グラフ.
         /// </summary>
         public void DefaultStackAreaLineChart()
         {

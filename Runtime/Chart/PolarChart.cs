@@ -4,8 +4,8 @@ using System.Collections.Generic;
 namespace XCharts.Runtime
 {
     /// <summary>
-    /// Polar coordinates are usually used in a circular layout.
-    /// || 极坐标系，可以用于散点图和折线图。
+    /// 極座標は通常、円形レイアウトで使用されます。
+    /// 散布図や折れ線グラフなどに利用可能です。
     /// </summary>
     [AddComponentMenu("XCharts/PolarChart", 23)]
     [ExecuteInEditMode]
@@ -14,6 +14,9 @@ namespace XCharts.Runtime
     [HelpURL("https://xcharts-team.github.io/docs/configuration")]
     public class PolarChart : BaseChart
     {
+        /// <summary>
+        /// チャートのデフォルト設定を行います。
+        /// </summary>
         protected override void DefaultChart()
         {
             EnsureChartComponent<PolarCoord>();
@@ -39,8 +42,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default radial bar polar chart.
-        /// || 默认径向柱状极坐标图。
+        /// デフォルトの径方向バー極座標グラフ。
         /// </summary>
         public void DefaultRadialBarPolarChart()
         {
@@ -76,8 +78,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default tangential bar polar chart.
-        /// || 默认切向柱状极坐标图。
+        /// デフォルトの接線方向バー極座標グラフ。
         /// </summary>
         public void DefaultTangentialBarPolarChart()
         {
@@ -115,8 +116,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default heatmap polar chart.
-        /// || 默认极坐标色块图。 
+        /// デフォルトの極座標ヒートマップグラフ。
         /// </summary>
         public void DefaultHeatmapPolarChart()
         {

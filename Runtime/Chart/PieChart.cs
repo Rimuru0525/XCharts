@@ -3,8 +3,7 @@ using UnityEngine;
 namespace XCharts.Runtime
 {
     /// <summary>
-    /// The pie chart is mainly used for showing proportion of different categories. Each arc length represents the proportion of data quantity.    
-    /// || 饼图主要用于显示不同类目占比的情况，通过弧长来反映数据的大小占比。     
+    /// 円グラフは主に異なるカテゴリの割合を表示するために使用されます。各円弧の長さはデータの量の割合を表します。
     /// </summary>
     [AddComponentMenu("XCharts/PieChart", 15)]
     [ExecuteInEditMode]
@@ -23,8 +22,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default label pie chart.
-        /// || 默认带标签饼图。
+        /// デフォルトのラベル付き円グラフ。
         /// </summary>
         public void DefaultLabelPieChart()
         {
@@ -35,8 +33,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default donut pie chart.
-        /// || 默认甜甜圈饼图。
+        /// デフォルトのドーナツグラフ。
         /// </summary>
         public void DefaultDonutPieChart()
         {
@@ -47,8 +44,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default label donut pie chart.
-        /// || 默认带标签甜甜圈饼图。
+        /// デフォルトのラベル付きドーナツグラフ。
         /// </summary>
         public void DefaultLabelDonutPieChart()
         {
@@ -61,8 +57,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default rose pie chart.
-        /// || 默认玫瑰饼图。
+        /// デフォルトのローズダイアグラム（半径基準）。
         /// </summary>
         public void DefaultRadiusRosePieChart()
         {
@@ -74,8 +69,7 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default area rose pie chart.
-        /// || 默认面积玫瑰饼图。
+        /// デフォルトのエリアローズダイアグラム（面積基準）。
         /// </summary>
         public void DefaultAreaRosePieChart()
         {

@@ -3,8 +3,8 @@ using UnityEngine;
 namespace XCharts.Runtime
 {
     /// <summary>
-    /// Ring chart is mainly used to show the proportion of each item and the relationship between the items.
-    /// || 环形图主要用于显示每一项的比例以及各项之间的关系。
+    /// リングチャートは、各項目の割合や項目間の関係を表示するために主に使用されます。
+    /// || リングチャートは、各項目の割合や項目同士の関係を可視化します。
     /// </summary>
     [AddComponentMenu("XCharts/RingChart", 20)]
     [ExecuteInEditMode]
@@ -21,8 +21,8 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default multiple ring chart.
-        /// || 默认多圆环图。
+        /// デフォルトの複数リングチャート。
+        /// || デフォルトの複数リングチャート。
         /// </summary>
         public void DefaultMultipleRingChart()
         {

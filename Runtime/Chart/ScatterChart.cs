@@ -3,8 +3,8 @@ using UnityEngine;
 namespace XCharts.Runtime
 {
     /// <summary>
-    /// Scatter chart is mainly used to show the relationship between two data dimensions.
-    /// || 散点图主要用于展现两个数据维度之间的关系。
+    /// 散布図は主に2つのデータ次元間の関係を示すために使用されます。
+    /// || 散布図は主に2つのデータ次元間の関係を示すために使用されます。
     /// </summary>
     [AddComponentMenu("XCharts/ScatterChart", 17)]
     [ExecuteInEditMode]
@@ -30,8 +30,8 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default bubble chart.
-        /// || 默认气泡图。
+        /// デフォルトのバブルチャート。
+        /// || デフォルトのバブルチャート.
         /// </summary>
         public void DefaultBubbleChart()
         {

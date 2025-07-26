@@ -3,8 +3,8 @@ using UnityEngine;
 namespace XCharts.Runtime
 {
     /// <summary>
-    /// Bar chart shows different data through the height of a bar, which is used in rectangular coordinate with at least 1 category axis.
-    /// || 柱状图（或称条形图）是一种通过柱形的高度（横向的情况下则是宽度）来表现数据大小的一种常用图表类型。
+    /// 棒グラフは、バーの高さ（横方向の場合は幅）を通じて異なるデータを表示します。少なくとも1つのカテゴリ軸を持つ直交座標系で使用されます。
+    /// || 棒グラフ（またはバーチャート）は、棒の高さ（横方向の場合は幅）でデータの大きさを表現する一般的なチャートタイプです。
     /// </summary>
     [AddComponentMenu("XCharts/BarChart", 14)]
     [ExecuteInEditMode]
@@ -28,8 +28,8 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default zebra column chart.
-        /// || 斑马柱状图。
+        /// デフォルトのゼブラ棒グラフ。
+        /// || シマウマ模様の棒グラフ。
         /// </summary>
         public void DefaultZebraColumnChart()
         {
@@ -40,8 +40,8 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default capsule column chart.
-        /// || 胶囊柱状图。
+        /// デフォルトのカプセル棒グラフ。
+        /// || カプセル型の棒グラフ。
         /// </summary>
         public void DefaultCapsuleColumnChart()
         {
@@ -52,8 +52,8 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default grouped column chart.
-        /// || 默认分组柱状图。
+        /// デフォルトのグループ化棒グラフ。
+        /// || デフォルトのグループ化棒グラフ。
         /// </summary>
         public void DefaultGroupedColumnChart()
         {
@@ -62,8 +62,8 @@ namespace XCharts.Runtime
         }
 
         /// <summary>
-        /// default stacked column chart.
-        /// || 默认堆叠分组柱状图。
+        /// デフォルトの積み上げ棒グラフ。
+        /// || デフォルトの積み上げグループ棒グラフ。
         /// </summary>
         public void DefaultStackedColumnChart()
         {

@@ -4,8 +4,8 @@ using UnityEngine;
 namespace XCharts.Runtime
 {
     /// <summary>
-    /// Parallel Coordinates is a common way of visualizing high-dimensional geometry and analyzing multivariate data.
-    /// || 平行坐标系，通过绘制垂直于坐标轴的平行线来显示数据的一种可视化图表。
+    /// 平行座標は、高次元の幾何学を可視化し、多変量データを分析する一般的な方法です。
+    /// || 平行座標は、座標軸に垂直な平行線を描画してデータを表示する可視化チャートの一種です。
     /// </summary>
     [AddComponentMenu("XCharts/ParallelChart", 25)]
     [ExecuteInEditMode]
